@@ -1,0 +1,13 @@
+def swapfiledata():
+    input1=input("Enter the name of the 1st file to be swapped: ")
+    input2 =input("Enter the name of the 2nd file to be swapped: ")
+    data_a=open(input1,'r')
+    data_b=open(input2,'r')
+    x=data_a.read()
+    y=data_b.read()
+    a=open(input1,'w')
+    b=open(input2,'w')
+    a.write(y)
+    b.write(x)
+    print("Your data has been successfully swapped!")
+swapfiledata()
